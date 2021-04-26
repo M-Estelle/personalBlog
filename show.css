@@ -1,0 +1,238 @@
+body,html{
+    display: block;
+    overflow-x: hidden;
+    height: 100%;
+    /* text-align: center; */
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+.head {
+     position: fixed; 
+    top:0;
+    left:0 ;
+     z-index: 100; 
+    width:90%;
+    color:#fff;
+    /* background: rgb(255, 255, 255,0);  */
+    /* background: transparent; */
+    height: 90px;
+    padding: 0 5%;
+    font-size: 15px;
+    /* box-shadow: 0 1px 1px 0 #f1f1f1; */
+    box-shadow: none;
+}
+#head.sticky {
+    background: #fff;
+    box-shadow: 0 1px 1px 0 #f1f1f1;
+}
+.logo {
+    display: block;
+    float: left;
+    width: 136px;
+    height: 30px;
+     background: url(image/logo2.png) no-repeat 50%;
+    background-size: 100%; 
+    margin-top: 30px;
+}
+.inhead li {
+    float: right;
+    margin: 0 10px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+
+}
+.inhead li a{
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color:#000 ;
+    font-weight: 400;
+}
+.search input {
+    color: white;
+}
+.sea {
+    width: 192px;
+    height: 32px;
+    padding: 6px 0;
+    line-height: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+
+    background: transparent;
+}
+
+.search input::-webkit-input-placeholder {
+    color: #fff;
+}
+.search {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 232px;
+    height: 32px;
+    border-radius: 16px;
+    background: rgb(30, 30, 30);
+}
+.searchbox {
+   margin-top: 29px;
+   float: right;
+   margin-left: 32px;
+   margin-right: 32px;
+  
+}
+.wenhao {
+    font-family: 'icomoon';
+    display: block;
+    font-size: 16px;
+    color: #cccccc;
+    margin: 8px 6px 0 12px;
+    float: left;
+    line-height: 16px;
+}
+ .new {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+    font-weight: 600;
+    background: #e6e6e6;
+}
+.picbox a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: 400;
+}
+.picbox span {
+    font-family: 'icomoon';
+    display: block;
+    font-size: 20px;
+    color: rgb(173, 173, 173);
+    cursor: pointer;
+    padding: 0 15px;
+}
+.picbox {
+    float: right;
+}
+/* 以上为导航栏的CSS */
+/* .maincontainer {
+    height: 100%;
+} */
+.up-picture {
+    background-image: url(image/img9.jpg);
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 1;
+    background-attachment: fixed;
+    position: relative;
+}
+.wordbox {
+    background: #ededee;
+    min-height: 300px;
+    display: flex;
+    width: 100%; 
+    color: #231815;
+}
+.picture {
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 1;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+     background-image: url(image/img3.jpg); 
+    cursor: default;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 100vh;
+    font-size: 3.3vmax;
+    font-family: Futura-LT;
+    letter-spacing: 1.2vmax;
+}
+.todown {
+     bottom: 3vh;
+    font-size: 5vmax;
+    color: #fff;
+    position: absolute;
+    font-weight: 200;
+    left: 50%;
+    font-family: 'icomoon';
+}
+.inwordbox {
+    margin: 15vh auto;
+    text-align: center;
+}
+.one-title {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 25px;
+    margin-bottom: 10vh;
+    color: #231815;
+    max-height: 30px;
+    width: 100%;
+}
+.main-content {
+    column-count: 2;
+    column-gap: 5vw;
+    text-align: left;
+    line-height: 2;
+    margin: 0 15%;
+}
+.down {
+    height: 19px;
+    margin: 15px 0 0;
+    line-height: 19px;
+    color: #aaa;
+    font-family: 'icomoon';
+    margin: 0 20%;
+    margin-top: 30px;
+}
+.down span {
+    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 以下是底部的css */
+.footer {
+    /* display: none; */
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 122px;
+    padding: 8vh 5%; 
+    text-align: center;
+    position: relative;
+    z-index: 90;
+     margin-left: -82px; 
+}
+.footer ul {
+    margin-bottom: 30px;
+}
+.footer li {
+    display: inline-block;
+    margin: 0 20px;
+}

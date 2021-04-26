@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="original1.css">
+    <link rel="stylesheet" href="user.css">
+    <script>
+        function displayComment() {
+            var comment = document.getElementById("comment");
+            if (comment.style.display != "block")
+                comment.style.display = "block";
+            else
+                comment.style.display = "none";
+
+        }
+        function returnComment() {
+            var comment = document.getElementById("comment");
+            comment.style.display = "none";
+        }
+        function changeColor() {
+            var ilike = document.getElementById("ilike");
+            if (ilike.style.color != "red") { ilike.style.color = "red"; }
+            else ilike.style.color = "#aaa";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 这里是用户登录后的主要界面页面 -->
+    <!-- 主要功能包括：上半部分提供发布文章的功能，下半部分提供浏览其他人的博客内容功能 -->
+    <div class="maincontainer">
+        <!-- 这里是导航栏 -->
+        <div class="head">
+            <a class="logo"></a>
+
+            <div class="picbox">
+                <a href="Setting.html" title="设置">
+                    <span></span>
+                </a>
+                <a href="FirstPage.html" title="退出登录">
+                    <span></span>
+                </a>
+                <a href="#" title="其他">
+                    <span></span>
+                </a>
+            </div>
+            <div class="searchbox">
+                <div class="search">
+                    <span class="wenhao"></span>
+                    <input placeholder="搜索用户" class="sea">
+                    <span class="new">new</span>
+                </div>
+            </div>
+
+            <!-- <ul class="inhead">
+                <li>
+                    <a href="Login.html">登录</a>
+                </li>
+                <li>
+                    <a href="SignUp.html">注册</a>
+                </li>
+                <li>
+                    <a href="FirstPage.html">首页</a>
+                </li>
+            </ul> -->
+
+        </div>
+        <!-- 这里是网页的主要部分-->
+        <div class="container">
+            <div class="upbox">
+                <a class="user" href="#">
+                    <div class="wrap">
+                        <div class="name">
+                            what's
+                            <br>
+                            new ?
+                        </div>
+                    </div>
+                </a>
+                <a class="write" href="write.html">
+                    <div class="wrap">
+                        <div class="penceil">
+                            <div class="one"></div>
+                            <div class="pen">
+                                let's write a passage
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="show" href="show.html">
+                    <div class="Wrap">
+                        <div class="sinLogo"></div>
+                    </div>
+                </a>
+            </div>
+            <!-- 这里为展示自己或别人博客的地方 -->
+            <div class="inner">
+                <!-- 这里为一个展示别人博客盒子的实例 -->
+                <div class="wordbox clearfix ">
+                    <div class="data-sin">
+                        <div class="single">
+                            <span class="day">06</span>
+                            <span class="month">Nov</span>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div class="word">
+                        <div class="up">
+                            <div class="tri"></div>
+                        </div>
+                        <div class="hezi">
+                            <div class="fabuzhe">
+                                <a href="#">小秘书</a>
+                            </div>
+                            <div class="biaoti">
+                                <h2>hi,大家国庆中秋双节快乐！有新消息汇报~
+                                </h2>
+                            </div>
+                            <div class="tiji"></div>
+                            <div class="zhengwen">
+                                <p>大家好呀，首先祝大家国庆中秋快乐！同时汇报一个新消息：
+                                    目前LOFTER已经可以在App Store、华为、OPPO、VIVO、小米等各大
+                                    应用商店下载啦，其他的应用商店可能还需要一些时间，请和我们一起耐
+                                    心等待吧。</p>
+                                <p>也欢迎大家给小伙伴分享这个消息，我们继续一路同行！</p>
+                            </div>
+                            <div class="down">
+                                <!-- 点赞及数量 -->
+                                <span id="ilike" onclick="changeColor()"> <span>5</span></span>
+                                <!-- 评论及数量 -->
+                                <span onclick="displayComment()"> <span>7</span></span>
+                            </div>
+                        </div>
+                        <!-- 评论的盒子 -->
+                        <div class="comment" id="comment">
+                            <div class="add">
+                                <input type="text">
+                                <button>发布</button>
+                            </div>
+                            <ul class="tag">
+                                <li class="isone">
+                                    <div class="wrap2">
+                                        <div class="incomment">
+                                            <span class="comuser">
+                                                <!-- 评论人的昵称 -->
+                                                <a href="#">同辈人的旗帜</a>
+                                            </span>
+                                            <!-- 评论的内容 -->
+                                            <span class="com">愿我们一直都能坚持自己的梦想走下去</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="return">
+                                <span id="return" onclick="returnComment()">收起</span>
+                            </div>
+                            <div class="tri2"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 这里为一个展示自己博客盒子的实例 -->
+                <div class="wordbox clearfix">
+                    <div class="data-sin">
+                    </div>
+                    <div class="word">
+                        <div class="hezi ">
+                            <div class="fabuzhe self">
+                                <a href="#">小秘书</a>
+                            </div>
+                            <div class="biaoti">
+                                <h2>hi,大家国庆中秋双节快乐！有新消息汇报~
+                                </h2>
+                            </div>
+                            <div class="tiji"></div>
+                            <div class="zhengwen">
+                                <p>大家好呀，首先祝大家国庆中秋快乐！同时汇报一个新消息：
+                                    目前LOFTER已经可以在App Store、华为、OPPO、VIVO、小米等各大
+                                    应用商店下载啦，其他的应用商店可能还需要一些时间，请和我们一起耐
+                                    心等待吧。</p>
+                                <p>也欢迎大家给小伙伴分享这个消息，我们继续一路同行！</p>
+                            </div>
+                            <div class="down">
+                                <!-- 删除 -->
+                                <span>删除 </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 这里是页面的底部 -->
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+                <li>
+                    <a href="#">常见问题</a>
+                </li>
+                <li>
+                    <a href="#">隐私申明</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">CONTACT@KREUZZZ.COM</a>
+                </li>
+                <li>
+                    <a href="#">INSTAGRAM</a>
+                </li>
+                <li>
+                    <a href="#">微博</a>
+                </li>
+            </ul>
+            <ul>
+
+                <li>
+                    <a href="#">© 2020 Kreuzzz</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

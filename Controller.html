@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="control.css">
+    <script>
+        function changeUsertable() {
+            var user = document.getElementById("user");
+            var pas = document.getElementById("passage");
+            user.style.display = "block";
+            pas.style.display = "none";
+        }
+        function changePastable() {
+            var user = document.getElementById("user");
+            var pas = document.getElementById("passage");
+            user.style.display = "none";
+            pas.style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 这里是管理员界面，分为文章管理和用户管理，并且可以进行搜索，每条结果可以进行的操作有：查看、删除 文章有推荐功能  -->
+    <!-- 功能：点击文章管理或用户管理按钮，可以切换不同的表格 -->
+    <div class="leftbox">
+        <ul>
+            <!-- 管理员昵称 -->
+            <li class="userName">
+                <h1>灵(☆_☆)</h1>
+            </li>
+            <li class="charX">
+                ×
+            </li>
+            <li class="textbox liHover" onclick="changeUsertable()">
+                <a herf="#">用户管理</a>
+            </li>
+            <li class="textbox liHover" onclick="changePastable()">
+                <a herf="#">文章管理</a>
+            </li>
+            <li>
+                <form method="get" action="/search">
+                    <input class="searchbox liHover" type="text" placeholder="输入搜索内容">
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div></div>
+    <div class="rightbox">
+        <div class="head">
+            <div class="retrun">
+                <a href="FirstPage.html"></a>
+            </div>
+        </div>
+        <div class="wordbox" id="user">
+            <div class="frontbox">
+                <table width="100%" cellspacing="1" cellpadding="4" class="tabtop13">
+                    <tr class="title">
+                        <td width="4%">序号</td>
+                        <td width="8%">用户ID</td>
+                        <td width="6%">用户名</td>
+                        <td width="5%">注册时间</td>
+                        <td width="8%">邮箱</td>
+                        <td width="8%">电话</td>
+                        <td width="10%" colspan="2">可执行操作</td>
+                    </tr>
+                    <tr class="normal">
+                        <td>1</td>
+                        <td>213456</td>
+                        <td>北清</td>
+                        <td>2000-10-1</td>
+                        <td>1805643555@qq.com</td>
+                        <td>13644456754</td>
+                        <td class="look"> 查看</td>
+                        <td class="delete"> 删除</td>
+                    </tr>
+                    <tr class="normal">
+                        <td>2</td>
+                        <td>213456</td>
+                        <td>MOON</td>
+                        <td>2000-10-1</td>
+                        <td>1805643555@qq.com</td>
+                        <td>13644456754</td>
+                        <td class="look"> 查看</td>
+                        <td class="delete"> 删除</td>
+                    </tr>
+                </table>
+                <div class="donwtable">
+                    <span>当前在第 1 页</span>
+                    <input type="submit" value="上一页">
+                    <input type="submit" value="下一页">
+
+                </div>
+            </div>
+        </div>
+        <div class="wordbox" id="passage">
+            <div class="frontbox">
+                <table width="100%" cellspacing="1" cellpadding="4" class="tabtop13">
+                    <tr class="title">
+                        <td width="4%">序号</td>
+                        <td width="8%">发文ID</td>
+                        <td width="6%">发文昵称</td>
+                        <td width="5%">发文时间</td>
+                        <td width="10%">标题</td>
+                        <td width="5%">评论</td>
+                        <td width=5%">点赞</td>
+                        <td width="10%" colspan="3">可执行操作</td>
+                    </tr>
+                    <tr class="normal">
+                        <td>1</td>
+                        <td>213456</td>
+                        <td>北清</td>
+                        <td>2000-10-1</td>
+                        <td class="havemax">关于党深化改革的报告</td>
+                        <td>1000</td>
+                        <td>567</td>
+                        <td class="look"> 查看</td>
+                        <td class="delete"> 删除</td>
+                        <td class="good"> 推荐</td>
+                    </tr>
+                    <tr class="normal">
+                        <td>2</td>
+                        <td>213456</td>
+                        <td>MOON</td>
+                        <td>2000-10-1</td>
+                        <td>关于党深化改革的报告</td>
+                        <td>1000</td>
+                        <td>567</td>
+                        <td class="look"> 查看</td>
+                        <td class="delete"> 删除</td>
+                        <td class="good"> 推荐</td>
+                    </tr>
+                </table>
+                <div class="donwtable">
+                    <span>当前在第 1 页</span>
+                    <input type="submit" value="上一页">
+                    <input type="submit" value="下一页">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

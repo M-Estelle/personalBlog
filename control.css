@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body{
+    background-color: #f0f6f8;
+    position: relative;
+    zoom: 1;
+    overflow-x: hidden;
+    min-width: 1100px;
+}
+body,textarea, input {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.8;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: 0;
+}
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?2xe8b4');
+    src:  url('fonts/icomoon.eot?2xe8b4#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?2xe8b4') format('truetype'),
+      url('fonts/icomoon.woff?2xe8b4') format('woff'),
+      url('fonts/icomoon.svg?2xe8b4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* 上面是基本设置 */
+.leftbox {
+    width: 17%;
+    float: left;
+    background-color: #3d586c;
+    position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+.rightbox {
+    margin-left: 250px;
+    width: 83%;
+    float: left;
+}
+
+.userName {
+    margin-top: 50px;
+}
+.userName h1{
+   font-size: 30px;
+   margin: 0 auto;
+   height: auto;
+   width: auto;
+   color: #ffffff;
+   text-align:center;
+   font-weight: normal;
+}
+.charX {
+    font-size: 25px;
+    font-family: serif;
+   margin: 0 auto;
+   height: auto;
+   width: auto;
+   color: #f3f5fa;
+   text-align:center;
+   font-weight: 400px;
+   padding-top: 13px;
+   padding-bottom: 40px;
+}
+.leftbox .textbox {
+    border:1px solid #ffffff;
+    border-radius: 50px;
+    line-height: 35px;
+    text-align: center;
+    height: 35px;
+    width: 188px;
+    color: #ffffff;
+    margin: 15px 30px;
+}
+
+.leftbox input {
+    border:1px solid #ffffff;
+    border-radius: 50px;
+    line-height: 35px;
+    text-align: left;
+    height: 35px;
+    width: 168px;
+    color: #ffffff;
+    margin: 0 30px;
+    background-color: #3d586c ;
+    padding-left: 20px;
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:  #ffffff;
+    font-size: 12px;
+  }
+  
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:  #ffffff;
+    font-size: 12px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:  #ffffff;
+    font-size: 12px;
+  }
+.liHover:hover {
+    background-color: #51697B;
+}
+/* 以上是左边的设置 */
+.head {
+   width: 100%;
+   background-color: #fff;
+   height: 50px;
+   border-bottom: 3px solid rgb(226, 226, 226);
+}
+.retrun {
+    float: right;
+    font-family: 'icomoon';
+    height: 50px;
+    width: 50px;
+    /* border-left: 1px solid #000; */
+    font-size: 30px;
+    text-align: center;
+}
+.retrun a {
+    color: #51697B;;
+}
+.wordbox {
+    margin:  30px auto;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.04);
+    width: 90%;
+    height: 660px;
+    position: relative;
+}
+.frontbox {
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'icomoon';
+    max-height: 560px;
+}
+.title {
+   font-size: 18px;
+   color: rgb(116, 116, 116);
+}
+.normal {
+   font-size: 16px;
+}
+.look {
+    cursor: pointer;
+    color: rgb(255, 187, 0);
+}
+.good {
+    color: red;
+    cursor: pointer;
+}
+.delete {
+    color:blue;
+    cursor: pointer;
+}
+.donwtable {
+    height: 15px;
+    color: #000;
+    font-size: 14px;
+    margin: 10px 0;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.havemax{
+    max-width:230px ;
+    min-width: 200px;
+    overflow: hidden;
+}
+#user {
+    display: block;
+}
+#passage {
+    display: none;
+}

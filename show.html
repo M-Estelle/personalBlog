@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="original1.css">
+    <link rel="stylesheet" href="show.css">
+    <!-- <script>
+        choosePic();
+        function choosePic() {
+            var imgArr = ['url(image/img1.jpg)', 'url(image/img2.jpg)', 'url(image/img3.jpg)', 'url(image/img4.jpg)', 'url(image/img5.jpg)', 'url(image/img6.jpg)', 'url(image/img7.jpg)', 'url(image/img8.jpg)']
+            var randomNum = Math.floor((Math.random() * imgArr.lenth));
+            document.getElementById("picture").style.backgroundImage = imgArr[randomNum];
+        }
+
+
+    </script> -->
+</head>
+
+<body>
+    <!-- 这里是博客展示页面 是当用户点击别人的头像，展示的别人博客内容的集合 -->
+    <!-- 主要部分包括最上方一张图片以及头像，中部左侧是搜索等功能，右侧展示每条博客的内容 -->
+    <div class="maincontainer">
+        <!-- 这里是导航栏 -->
+        <div class="head" id="head">
+            <a class="logo"></a>
+
+            <div class="picbox">
+                <a href="Setting.html" title="设置">
+                    <span></span>
+                </a>
+                <a href="FirstPage.html" title="退出登录">
+                    <span></span>
+                </a>
+                <a href="#" title="其他">
+                    <span></span>
+                </a>
+            </div>
+            <div class="searchbox">
+                <div class="search">
+                    <span class="wenhao"></span>
+                    <input placeholder="搜索用户" class="sea">
+                    <span class="new">new</span>
+                </div>
+            </div>
+
+            <!-- <ul class="inhead">
+                <li>
+                    <a href="Login.html">登录</a>
+                </li>
+                <li>
+                    <a href="SignUp.html">注册</a>
+                </li>
+                <li>
+                    <a href="FirstPage.html">首页</a>
+                </li>
+            </ul> -->
+
+        </div>
+        <!-- class="container" -->
+        <!-- 这里是网页的主要部分 -->
+        <div>
+            <div class="up-picture">
+                <div class="todown"></div>
+            </div>
+            <!-- 这里是添加博客内容的地方，添加内容时，请同时添加一个照片盒子，照片上的数字为第几个博客内容的序号，如下两个盒子的排列 -->
+            <div class="wordbox">
+                <div class="inwordbox">
+                    <div class="one-title">
+                        hi,大家国庆中秋双节快乐！有新消息汇报~
+                    </div>
+                    <div class="main-content">
+                        <p>大家好呀，首先祝大家国庆中秋快乐！同时汇报一个新消息：
+                            目前LOFTER已经可以在App Store、华为、OPPO、VIVO、小米等各大
+                            应用商店下载啦，其他的应用商店可能还需要一些时间，请和我们一起耐
+                            心等待吧。</p>
+                        <p>也欢迎大家给小伙伴分享这个消息，我们继续一路同行！</p>
+                    </div>
+                    <div class="down">
+                        <!-- 日期 -->
+                        <span>2020-10-14</span>
+                        <!-- 点赞及数量 -->
+                        <span> <span>5</span></span>
+                        <!-- 评论及数量 -->
+                        <span> <span>7</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="picture" id="picture">The one</div>
+            <!-- 这里是一个的结束 -->
+
+            <!-- 这里是添加博客内容的地方，添加内容时，请同时添加一个照片盒子，照片上的数字为第几个博客内容的序号，如下两个盒子的排列 -->
+            <div class="wordbox">
+                <div class="inwordbox">
+                    <div class="one-title">
+                        hi,大家国庆中秋双节快乐！有新消息汇报~
+                    </div>
+                    <div class="main-content">
+                        <p>大家好呀，首先祝大家国庆中秋快乐！同时汇报一个新消息：
+                            目前LOFTER已经可以在App Store、华为、OPPO、VIVO、小米等各大
+                            应用商店下载啦，其他的应用商店可能还需要一些时间，请和我们一起耐
+                            心等待吧。</p>
+                        <p>也欢迎大家给小伙伴分享这个消息，我们继续一路同行！</p>
+                    </div>
+                    <div class="down">
+                        <!-- 日期 -->
+                        <span>2020-10-14</span>
+                        <!-- 点赞及数量 -->
+                        <span> <span>5</span></span>
+                        <!-- 评论及数量 -->
+                        <span> <span>7</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="picture" id="picture">The two</div>
+            <!-- 这里是一个的结束 -->
+
+            <!-- 这里是添加博客内容的地方，添加内容时，请同时添加一个照片盒子，照片上的数字为第几个博客内容的序号，如下两个盒子的排列 -->
+            <div class="wordbox">
+                <div class="inwordbox">
+                    <div class="one-title">
+                        hi,大家国庆中秋双节快乐！有新消息汇报~
+                    </div>
+                    <div class="main-content">
+                        <p>大家好呀，首先祝大家国庆中秋快乐！同时汇报一个新消息：
+                            目前LOFTER已经可以在App Store、华为、OPPO、VIVO、小米等各大
+                            应用商店下载啦，其他的应用商店可能还需要一些时间，请和我们一起耐
+                            心等待吧。</p>
+                        <p>也欢迎大家给小伙伴分享这个消息，我们继续一路同行！</p>
+                    </div>
+                    <div class="down">
+                        <!-- 日期 -->
+                        <span>2020-10-14</span>
+                        <!-- 点赞及数量 -->
+                        <span> <span>5</span></span>
+                        <!-- 评论及数量 -->
+                        <span> <span>7</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="picture" id="picture">The Three</div>
+            <!-- 这里是一个的结束 -->
+
+            <!-- 这里是页面的底部 -->
+        </div>
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+                <li>
+                    <a href="#">常见问题</a>
+                </li>
+                <li>
+                    <a href="#">隐私申明</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">CONTACT@KREUZZZ.COM</a>
+                </li>
+                <li>
+                    <a href="#">INSTAGRAM</a>
+                </li>
+                <li>
+                    <a href="#">微博</a>
+                </li>
+            </ul>
+            <ul>
+
+                <li>
+                    <a href="#">© 2020 Kreuzzz</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <script>
+
+        var imgs = ["image/img1.jpg", "image/img2.jpg", "image/img3.jpg", "image/img4.jpg", "image/img5.jpg", "image/img6.jpg", "image/img7.jpg", "image/img8.jpg"];
+        // var index = Math.round(Math.random() * 7);
+        // var img = imgs[index];
+
+
+
+        function showbg() {
+
+            // var arr = document.getElementsByClassName("picture").style.backgroundImage = "url(" + img + ")";
+            var arr = document.getElementsByClassName("picture");
+            for (var i = 0; i < arr.length; i++) {
+                var index = Math.round(Math.random() * 7);
+                var img = imgs[index];
+                arr[i].style.backgroundImage = "url(" + img + ")";
+            }
+
+        }
+        document.body.onload = function () {
+
+            showbg();
+        }
+
+    </script>
+</body>
+
+</html>

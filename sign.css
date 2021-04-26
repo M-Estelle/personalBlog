@@ -1,0 +1,195 @@
+
+body{
+    display: block;
+    overflow-x: hidden;
+
+    /* text-align: center; */
+}
+.head {
+    /* position: fixed; */
+    top:0;
+    left:0 ;
+     z-index: 100; 
+    width:90%;
+    color:#fff ;
+    background-color: #000;
+    height: 90px;
+    padding: 0 5%;
+    font-size: 15px;
+}
+.logo {
+    display: block;
+    float: left;
+    width: 136px;
+    height: 30px;
+     background: url(image/logo1.png) no-repeat 50%;
+    background-size: 100%; 
+    margin-top: 30px;
+}
+.inhead li {
+    float: right;
+    margin: 0 10px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+
+}
+.inhead li a{
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    line-height: 30px;
+
+    font-weight: 400;
+}
+
+.sea {
+    width: 192px;
+    height: 32px;
+    padding: 6px 0;
+    line-height: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 232px;
+    height: 32px;
+    border-radius: 16px;
+    background: #f5f5f5;
+    
+}
+.searchbox {
+   margin-top: 29px;
+   float: right;
+   margin-left: 32px;
+   margin-right: 32px;
+}
+.wenhao {
+    font-family: 'icomoon';
+    display: block;
+    font-size: 16px;
+    color: #cccccc;
+    margin: 8px 6px 0 12px;
+    float: left;
+    line-height: 16px;
+}
+ .new {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+    font-weight: 600;
+    background: #e6e6e6;
+}
+.picbox a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: 400;
+}
+.picbox span {
+    font-family: 'icomoon';
+    display: block;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    padding: 0 15px;
+}
+.picbox {
+    float: right;
+}
+/* 以上为导航栏的CSS */
+.container {
+    position: relative;
+   min-height: 704px;
+   
+}
+
+.inner {
+     position: absolute; 
+    left: 50%;
+    margin-left: -140px;
+    top: 20%;
+    color:#fff ;
+    min-width: 280px;
+    text-align: center;
+    height: auto;
+}
+.inner form {
+    margin: 0 auto;
+}
+fieldset {
+    border: 0;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+.inner div {
+    font-family: DIN-Medium,siyuan;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.inner input {
+    border: none;
+    outline: none;
+    /* opacity: 0; */
+    display: block;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    font-family: DIN-Medium,siyuan;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-bottom-color: #c7c8c9;
+    color: #fff;
+    /* -webkit-text-fill-color: transparent; */
+}
+.inner button {
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+    background:  transparent;
+    outline: none;
+    display: block;
+    margin: 60px 0;
+    border: 1px solid #c7c8c9;
+    color:#c7c8c9;
+    padding: 15px 0;
+}
+/* 以下是底部的css */
+.footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 122px;
+    padding: 8vh 5%; 
+    text-align: center;
+    position: relative;
+    z-index: 90;
+     margin-left: -70px; 
+}
+.footer ul {
+    margin-bottom: 30px;
+}
+.footer li {
+    display: inline-block;
+    margin: 0 20px;
+}

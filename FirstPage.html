@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="original.css">
+    <link rel="stylesheet" href="First2.css">
+
+</head>
+
+<body>
+    <!-- 这里是网站的首页，主要分为左右两部分，左边功能为注册，右边为登录 -->
+    <div class="maincontainer">
+        <!-- 注册 -->
+        <div class="leftbox">
+            <a class="offsighup" href="SignUp.html" onmouseover="extendBlack()" onmouseout="returnBlack()">
+                <div id="signup" class="sign-up">
+                </div>
+            </a>
+            <a class="offlogin" onmouseover="extendWhite()" onmouseout="returnWhite()" href="Login.html">
+                <div class="login" id="login">
+                </div>
+            </a>
+            <a class="inleft" href="SignUp.html" id="inleft" onmouseover="extendBlack()" onmouseout="returnBlack()">
+                <div class="thinleft">
+                    <div class="tri1"></div>
+                    <div class="text1">
+                        <div> SignUp</div>
+                        <div>注册</div>
+                    </div>
+                </div>
+            </a>
+            <a class="inright" href="Login.html" id="inright" onmouseout="returnWhite()" href="Login.html">
+                <div class="thinright">
+                    <div class="tri2"></div>
+                    <div class="text2">
+                        <div>Login</div>
+                        <div>登录</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function extendBlack() {
+            var inleft = document.getElementById("inleft");
+            inleft.style.display = "block";
+            document.getElementById("signup").style.backgroundImage = 'url(image/black2.jpg)';
+        }
+        function returnBlack() {
+            var inleft = document.getElementById("inleft");
+            inleft.style.display = "none";
+            document.getElementById("signup").style.backgroundImage = 'url(image/black1.jpg)';
+        }
+        function extendWhite() {
+            var inright = document.getElementById("inright");
+            inright.style.display = "block";
+            document.getElementById("login").style.backgroundImage = 'url(image/white2.jpg)';
+        }
+        function returnWhite() {
+            var inright = document.getElementById("inright");
+            inright.style.display = "none";
+            document.getElementById("login").style.backgroundImage = 'url(image/white1.jpg)';
+        }
+    </script>
+</body>
+
+</html>

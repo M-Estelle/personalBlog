@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="write.css">
+</head>
+
+<body>
+    <!-- 这里是写文章页面 -->
+    <div class="maincontainer">
+        <!-- 这里是导航栏 -->
+        <div class="head">
+            <a class="logo"></a>
+
+            <div class="center">
+                <span class="writeP">写文章</span>
+            </div>
+            <input type="submit" value="发布" class="submitbtn">
+        </div>
+        <!-- 这里是网页的主要部分，包括写标题、导语（选填）、正文 -->
+        <div class="container">
+            <input type="text" class="title" placeholder="请填写标题" maxlength="32" autocomplete="off" style="height: 50px;"
+                wrap="hard"></input>
+            <!-- <textarea class="pre" placeholder="请填写导语（选填）" maxlength="100" autocomplete="off"></textarea> -->
+            <div class="write">
+                <input class="passage" placeholder="请输入正文" autocomplete="off"></input>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
